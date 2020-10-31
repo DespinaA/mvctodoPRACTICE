@@ -31,7 +31,7 @@ describe("Verify the steps", () => {
 		browser.pause(1000)
 		$("#new-todo").setValue("I just finished")
 		browser.keys("\uE007");
-		browser.pause(3000);
+		//browser.pause(3000);
 		browser.execute(() => {
 			document.getElementsByTagName("label")[2].innerText = ("Updated the second item")
 		})
